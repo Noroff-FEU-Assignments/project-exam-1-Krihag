@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Universe Blog - Home</title>
+    <meta
+      name="description"
+      content="Embark on a cosmic journey with our captivating blog. Explore the universe's wonders—stars, galaxies, and cosmic mysteries. Uncover the beauty of space through insightful articles. Join us in unraveling the secrets of the cosmos!"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Hotjar Tracking Code for The Universe Blog -->
+    <script>
+      (function (h, o, t, j, a, r) {
+        h.hj =
+          h.hj ||
+          function () {
+            (h.hj.q = h.hj.q || []).push(arguments);
+          };
+        h._hjSettings = { hjid: 3751530, hjsv: 6 };
+        a = o.getElementsByTagName("head")[0];
+        r = o.createElement("script");
+        r.async = 1;
+        r.src = t + h._hjSettings.hjid + j + h._hjSettings.hjsv;
+        a.appendChild(r);
+      })(window, document, "https://static.hotjar.com/c/hotjar-", ".js?sv=");
+    </script>
+
+    <script
+      src="https://kit.fontawesome.com/5b97174c12.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <script type="module" src="/js/pages/index.js"></script>
+    <script type="module" src="/js/script.js"></script>
+
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/index.css" />
+  </head>
+  <body>
+    <header class="main-header">
+      <a class="logo-header" href="#">The <span>universe</span> blog</a>
+      <nav class="nav-bar">
+        <a href="#" class="active">Home</a>
+        <a href="/html/posts.html">Posts</a>
+        <a href="/html/contact.html">Contact</a>
+        <a href="/html/about.html">About</a>
+      </nav>
+      <div class="hamburger-menu">
+        <i class="fa-solid fa-bars hamburger-open"></i>
+        <i class="fa-solid fa-xmark hide-hamburger hamburger-close"></i>
+      </div>
+    </header>
+    <main>
+      <section class="hero-section">
+        <video class="background-video" autoplay muted loop id="myVideo">
+          <source src="/images/particles_-_323 (720p).mp4" type="video/mp4" />
+        </video>
+        <div class="hero-content-container">
+          <div class="hero-content-text">
+            <div class="hero-welcome">Welcome</div>
+            <h1>To the universe blog</h1>
+            <p>
+              We're here to help you learn about space and science in a simple
+              way. Join us for easy-to-understand cosmic facts and cool
+              pictures. We're your cosmic tour guides, making the universe super
+              easy to explore. Let's have some fun learning together!
+            </p>
+          </div>
+          <img
+            src="/images/astronaut-hero.png"
+            alt="Astronout in middle of the universe"
+            class="astronaut-hero-img"
+          />
+        </div>
+      </section>
+      <section class="latest-post-section" id="latest-section">
+        <div class="header-and-view">
+          <h2>Latest posts</h2>
+          <a href="html/posts.html">all posts</a>
+        </div>
+        <div class="latest-posts-container">
+          <div class="all-latest-posts">
+            <div class="loader-container">
+              <span class="loader"></span>
+            </div>
+          </div>
+        </div>
+        <div class="latest-post-btns">
+          <div>
+            <button class="latest-button-left" aria-label="button-left">
+              <i class="fa-solid fa-chevron-left"></i>
+            </button>
+            Next Post
+          </div>
+          <div>
+            Prev Post
+            <button class="latest-button-right" aria-label="button-right">
+              <i class="fa-solid fa-chevron-right"></i>
+            </button>
+          </div>
+        </div>
+      </section>
+      <section class="solar-system-section">
+        <div class="solar-system-background">
+          <div class="solar-system-content">
+            <div class="solar-system-demo">live <span>demo</span></div>
+            <div class="solar-system-watch">Watch</div>
+            <h2>The solarsystem</h2>
+            <a href="/html/solarsystem.html"
+              ><button class="orange-button">Check it out</button></a
+            >
+          </div>
+        </div>
+
+        <div class="explore-planets-container">
+          <div class="header-and-view">
+            <h3>Exploring the planets</h3>
+
+            <a href="html/posts.html">all posts</a>
+          </div>
+
+          <div class="explore-planets">
+            <div class="loader-container">
+              <span class="loader"></span>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="featured-post-section">
+        <div class="header-all-posts">
+          <h3>Featured posts</h3>
+          <a href="html/posts.html">all posts</a>
+        </div>
+        <div class="featured-posts-container">
+          <div class="all-featured-posts">
+            <div class="loader-container">
+              <span class="loader"></span>
+            </div>
+          </div>
+        </div>
+
+        <div class="featured-dots">
+          <span class="dot-active"></span><span></span><span></span>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div>
+        <p class="footer-copyright">&copy; copyright 2023</p>
+        <p class="footer-logo">The <span>universe</span> blog</p>
+        <div class="footer-copyright">All rights reserved</div>
+      </div>
+      <div>
+        <a href="html/posts.html">Posts</a>
+        <a href="html/posts.html">News</a>
+        <a href="html/solarsystem.html">Planets</a>
+      </div>
+      <div>
+        <a href="html/contact.html">Contact</a>
+        <a href="html/contact.html">Contact Form</a>
+        <a href="html/contact.html">Universe Club</a>
+      </div>
+      <div>
+        <a href="html/about.html">About</a>
+        <a href="html/about.html">About Me</a>
+      </div>
+    </footer>
+  </body>
+</html>

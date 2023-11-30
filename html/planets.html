@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <meta
+      name="description"
+      content="Explore the planets in our solar system! Learn about its cool features and cosmic importance. Join us on a space adventure to uncover the mysteries of this amazing planet. Let's journey together through our cosmic neighborhood!"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Hotjar Tracking Code for The Universe Blog -->
+    <script>
+      (function (h, o, t, j, a, r) {
+        h.hj =
+          h.hj ||
+          function () {
+            (h.hj.q = h.hj.q || []).push(arguments);
+          };
+        h._hjSettings = { hjid: 3751530, hjsv: 6 };
+        a = o.getElementsByTagName("head")[0];
+        r = o.createElement("script");
+        r.async = 1;
+        r.src = t + h._hjSettings.hjid + j + h._hjSettings.hjsv;
+        a.appendChild(r);
+      })(window, document, "https://static.hotjar.com/c/hotjar-", ".js?sv=");
+    </script>
+    <script
+      src="https://kit.fontawesome.com/5b97174c12.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <link rel="stylesheet" href="../css/styles.css" />
+    <link rel="stylesheet" href="../css/planets.css" />
+
+    <script type="module" src="/js/script.js"></script>
+    <script type="module" src="../js/pages/description.js"></script>
+  </head>
+  <body>
+    <header class="main-header">
+      <a class="logo-header" href="../index.html"
+        >The <span>universe</span> blog</a
+      >
+      <nav class="nav-bar">
+        <a href="../index.html">Home</a>
+        <a href="posts.html" class="active">Posts</a>
+        <a href="contact.html">Contact</a>
+        <a href="about.html">About</a>
+      </nav>
+      <div class="hamburger-menu">
+        <i class="fa-solid fa-bars hamburger-open"></i>
+        <i class="fa-solid fa-xmark hide-hamburger hamburger-close"></i>
+      </div>
+    </header>
+    <main>
+      <section class="planet-info-container">
+        <video class="background-video" autoplay muted loop id="myVideo">
+          <source src="/images/particles_-_323 (720p).mp4" type="video/mp4" />
+        </video>
+        <div class="content-and-image">
+          <div class="content-container">
+            <div class="loader-container">
+              <span class="loader"></span>
+            </div>
+            <div class="planet-number hide-element hide-left"></div>
+            <div class="hide-left hide-element planet-header-name">
+              <h1></h1>
+              <p></p>
+            </div>
+            <p class="hide-element planet-subheader hide-bottom"></p>
+          </div>
+          <img class="planet-img" src="" alt="Image of the planet" />
+          <div class="planets-list">
+            <button
+              class="show-hide-planets hide-planets"
+              aria-label="hide planet icons"
+            >
+              <i class="fa-solid fa-chevron-right"></i>
+            </button>
+            <button
+              class="show-hide-planets hide-ele show-planets"
+              aria-label="show planet icons"
+            >
+              <i class="fa-solid fa-chevron-left"></i>
+            </button>
+            <a class="planets-link" href="planets.html?id=1">
+              <img
+                class="planets-icon"
+                src="/images/icons-planets/mercury_icon.png"
+                alt=""
+              />
+              <p>01 Mercury</p>
+            </a>
+
+            <a class="planets-link" href="planets.html?id=2">
+              <img
+                class="planets-icon"
+                src="/images/icons-planets/venus_icon.png"
+                alt=""
+              />
+              <p>02 Venus</p>
+            </a>
+            <a class="planets-link" href="planets.html?id=3">
+              <img
+                class="planets-icon"
+                src="/images/icons-planets/earth_icon.png"
+                alt=""
+              />
+              <p>03 Earth</p>
+            </a>
+            <a class="planets-link" href="planets.html?id=4">
+              <img
+                class="planets-icon"
+                src="/images/icons-planets/mars_icon.png"
+                alt=""
+              />
+              <p>04 Mars</p>
+            </a>
+            <a class="planets-link" href="planets.html?id=5">
+              <img
+                class="planets-icon"
+                src="/images/icons-planets/jupiter_icon.png"
+                alt=""
+              />
+              <p>05 Jupiter</p>
+            </a>
+            <a class="planets-link" href="planets.html?id=6">
+              <img
+                class="planets-icon"
+                src="/images/icons-planets/saturn_icon.png"
+                alt=""
+              />
+              <p>06 Saturn</p>
+            </a>
+            <a class="planets-link" href="planets.html?id=7">
+              <img
+                class="planets-icon"
+                src="/images/icons-planets/uranus_icon.png"
+                alt=""
+              />
+              <p>07 Uranus</p>
+            </a>
+            <a class="planets-link last-planet" href="planets.html?id=8">
+              <img
+                class="planets-icon"
+                src="/images/icons-planets/neptum_icon.png"
+                alt=""
+              />
+              <p>08 Neptune</p>
+            </a>
+          </div>
+        </div>
+      </section>
+      <section class="planet-description-container">
+        <div class="planet-description hide-element hide-top">
+          <h3>Description</h3>
+          <p class="description-1 planet-description"></p>
+          <p class="description-2 planet-description"></p>
+        </div>
+        <div class="planet-facts">
+          <h3 class="hide-element">Quick Facts:</h3>
+          <div class="planet-fact hide-element hide-top">
+            Climate: <span class="quick-facts"></span>
+          </div>
+          <div class="planet-fact hide-element hide-top">
+            Temp: <span class="quick-facts"></span>
+          </div>
+          <div class="planet-fact hide-element hide-top">
+            Size: <span class="quick-facts"></span>
+          </div>
+          <div class="planet-fact hide-element hide-top">
+            Distance (from sun): <span class="quick-facts"></span>
+          </div>
+          <div class="planet-fact hide-element hide-top">
+            Moons: <span class="quick-facts"></span>
+          </div>
+        </div>
+      </section>
+
+      <section class="solar-system-position">
+        <img src="" alt="" class="solar-system-img" />
+        <div class="solar-system-content">
+          <p class="solar-system-text"></p>
+          <div class="solar-system-live-btn">
+            <div>
+              Watch the solarsystem <br />
+              in our <span>live demo</span>
+            </div>
+            <button aria-label="Live demo of solarsystem" class="orange-button">
+              <a href="/html/solarsystem.html">WATCH NOW</a>
+            </button>
+          </div>
+        </div>
+      </section>
+      <section class="fun-facts-section">
+        <div class="fun-facts-background">
+          <h2 class="fun-facts-header">Fun facts</h2>
+          <div class="fun-facts-container">
+            <div class="fun-fact fun-fact-1 hide-element hide-top">
+              <h4>Did you know . . .</h4>
+              <p>. . . that</p>
+            </div>
+            <div class="fun-fact fun-fact-2 hide-element hide-top">
+              <h4>Did you know . . .</h4>
+              <p>. . . that</p>
+            </div>
+            <div class="fun-fact fun-fact-3 hide-element hide-top">
+              <h4>Did you know . . .</h4>
+              <p>. . . that</p>
+            </div>
+            <div class="funfact-btns">
+              <button class="fun-facts-btn-left" aria-label="button left">
+                <i class="fa-solid fa-chevron-left"></i>
+              </button>
+              <button class="fun-facts-btn-right" aria-label="button right">
+                <i class="fa-solid fa-chevron-right"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <dialog id="modal">
+      <img src="" alt="" class="rounded" id="modalImage" />
+      <div class="close"></div>
+    </dialog>
+    <footer>
+      <div>
+        <p class="footer-copyright">&copy; copyright 2023</p>
+        <p class="footer-logo">The <span>universe</span> blog</p>
+        <div class="footer-copyright">All rights reserved</div>
+      </div>
+      <div>
+        <a href="posts.html">Posts</a>
+        <a href="posts.html">News</a>
+        <a href="solarsystem.html">Planets</a>
+      </div>
+      <div>
+        <a href="contact.html">Contact</a>
+        <a href="contact.html">Contact Form</a>
+        <a href="html/contact.html">Universe Club</a>
+      </div>
+      <div>
+        <a href="about.html">About</a>
+        <a href="about.html">About Me</a>
+      </div>
+    </footer>
+  </body>
+</html>

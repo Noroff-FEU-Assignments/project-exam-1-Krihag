@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Embark on a cosmic voyage through our Solar System page. Explore fascinating details about planets, moons, and more. Dive into the wonders of space and uncover the celestial beauty that defines our cosmic neighborhood."
+    />
+    <title>Universe Blog - Solarsystem</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Hotjar Tracking Code for The Universe Blog -->
+    <script>
+      (function (h, o, t, j, a, r) {
+        h.hj =
+          h.hj ||
+          function () {
+            (h.hj.q = h.hj.q || []).push(arguments);
+          };
+        h._hjSettings = { hjid: 3751530, hjsv: 6 };
+        a = o.getElementsByTagName("head")[0];
+        r = o.createElement("script");
+        r.async = 1;
+        r.src = t + h._hjSettings.hjid + j + h._hjSettings.hjsv;
+        a.appendChild(r);
+      })(window, document, "https://static.hotjar.com/c/hotjar-", ".js?sv=");
+    </script>
+    <script
+      src="https://kit.fontawesome.com/5b97174c12.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <link rel="stylesheet" href="/css/styles.css" />
+    <link rel="stylesheet" href="/css/solarsystem.css" />
+
+    <script type="module" src="/js/script.js"></script>
+    <script type="module" src="../js/pages/solarsystem.js"></script>
+  </head>
+  <body>
+    <header class="main-header">
+      <a class="logo-header" href="../index.html"
+        >The <span>universe</span> blog</a
+      >
+      <nav class="nav-bar">
+        <a href="../index.html">Home</a>
+        <a href="posts.html" class="active">Posts</a>
+        <a href="contact.html">Contact</a>
+        <a href="about.html">About</a>
+      </nav>
+      <div class="hamburger-menu">
+        <i class="fa-solid fa-bars hamburger-open"></i>
+        <i class="fa-solid fa-xmark hide-hamburger hamburger-close"></i>
+      </div>
+    </header>
+    <main>
+      <section class="solarsystem-background">
+        <div class="solarsystem-header">
+          <h1>Live <span>demo</span> of the Solar System</h1>
+          <p>
+            See all the planets in our Solar System as they travel around the
+            Sun in their own unique orbits, giving you a glimpse of how they
+            move in space.
+          </p>
+        </div>
+        <div>
+          <!-- <video class="background-video" autoplay muted loop id="myVideo">
+            <source src="/images/particles_-_323 (720p).mp4" type="video/mp4" />
+          </video> -->
+          <canvas id="paper" height="1200px" width="1200px"></canvas>
+        </div>
+        <p class="solarsystem-note">
+          Please note: The live demo is not intended to reflect real-time planet
+          orbits. Check each planet's specific post for its realistic orbit
+          duration.
+        </p>
+      </section>
+      <section class="solarsystem-info-container">
+        <div class="content-and-facts">
+          <div class="solarsystem-content">
+            <h2>the solarsystem</h2>
+            <p>
+              The solar system is a vast place with the Sun at its center,
+              surrounded by eight planets: Mercury, Venus, Earth, Mars, Jupiter,
+              Saturn, Uranus, and Neptune. Earth, being the third planet, is
+              unique for its ability to support life, thanks to its atmosphere
+              and water. In addition to planets and moons, there are asteroids,
+              rocky bodies located in the asteroid belt between Mars and
+              Jupiter. Comets, on the other hand, are icy bodies that come from
+              the outer edges of the solar system and develop glowing tails when
+              they approach the Sun.
+            </p>
+            <p>
+              Scientists explore the solar system through space missions,
+              continuously deepening our understanding of its formation and
+              evolution. Ongoing research helps us unravel the dynamics of the
+              solar system and gain insights into the broader universe.
+            </p>
+          </div>
+          <div class="solarsystem-facts">
+            <h3>Quick facts:</h3>
+            <div class="solarsystem-fact">
+              Age:<span>4.571 billion years</span>
+            </div>
+            <div class="solarsystem-fact">Planets: <span>8</span></div>
+            <div class="solarsystem-fact">Dwarf Planets: <span>5</span></div>
+            <div class="solarsystem-fact">Lowest temp: <span>-270°C</span></div>
+            <div class="solarsystem-fact">
+              Highest temp: <span>5500°C</span>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="all-planets-container">
+        <div class="header-and-view">
+          <h2>Related Posts:</h2>
+          <a href="posts.html">all posts</a>
+        </div>
+
+        <div class="all-planets-posts">
+          <div class="loader-container">
+            <span class="loader"></span>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div>
+        <p class="footer-copyright">&copy; copyright 2023</p>
+        <p class="footer-logo">The <span>universe</span> blog</p>
+        <div class="footer-copyright">All rights reserved</div>
+      </div>
+      <div>
+        <a href="posts.html">Posts</a>
+        <a href="posts.html">News</a>
+        <a href="solarsystem.html">Planets</a>
+      </div>
+      <div>
+        <a href="contact.html">Contact</a>
+        <a href="contact.html">Contact Form</a>
+        <a href="html/contact.html">Universe Club</a>
+      </div>
+      <div>
+        <a href="about.html">About</a>
+        <a href="about.html">About Me</a>
+      </div>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,203 @@
+.contact-form-section {
+  min-height: 800px;
+  background: #fff;
+  position: relative;
+
+  overflow: hidden;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  max-width: 100%;
+}
+.contact-form-section .background-video {
+  width: 145%;
+
+  position: absolute;
+  object-fit: cover;
+  top: 0;
+  left: 0;
+  /* min-height: 900px; */
+}
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  padding: 0 3rem;
+  width: 700px;
+
+  gap: 1rem;
+  align-items: start;
+  position: absolute;
+  background: #0d0d0d;
+  min-height: 100%;
+  top: 0;
+  color: #fff;
+  transition: 2s ease-in-out;
+}
+
+.contact-form h1 {
+  margin: 0;
+  text-transform: uppercase;
+  padding: 3rem 0;
+  text-align: start;
+}
+.contact-label-input {
+  display: flex;
+  flex-direction: column;
+  /* max-width: 700px; */
+  position: relative;
+}
+.contact-label-input input,
+textarea {
+  padding: 0.8rem 1.3rem;
+  width: 500px;
+  border-radius: 0.7rem;
+  border: none;
+}
+
+.contact-label-input,
+textarea {
+  margin: 0.5rem auto;
+}
+
+.error-message {
+  color: #9a2e2e;
+  position: absolute;
+  bottom: -1.5rem;
+  display: none;
+}
+textarea {
+}
+.contact-form button {
+  margin: 1rem auto;
+}
+.contact-form-style-container {
+  display: flex;
+  flex-direction: column;
+  max-width: 500px;
+
+  margin: 2rem auto;
+}
+/* .faq-container {
+  width: 50%;
+  background: #ebebeb; 
+  height: 100%;
+
+  position: absolute;
+  right: 0;
+  top: 0;
+} */
+
+/* UNIVERSE CLUB*/
+.universe-club-container {
+  padding: 7rem 10%;
+  display: flex;
+  background: #ebebeb;
+  gap: 3rem;
+}
+.universe-club-container img {
+  width: 450px;
+  /* height: 350px; */
+  max-width: 100%;
+  border-radius: 0.5rem;
+}
+.universe-club-content {
+  max-width: 600px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  font-size: 1.15rem;
+  gap: 1rem;
+}
+.universe-club-content h2 {
+  margin: 0;
+  font-weight: 500;
+  font-size: 1.5rem;
+}
+.universe-club-signup {
+  margin-top: 1rem;
+}
+.universe-club-signup p {
+  font-weight: 550;
+  margin-bottom: 0.8rem;
+}
+.universe-club-signup input {
+  padding: 0.6rem 1rem;
+  border: none;
+  border-radius: 1rem;
+  font-size: 1.2rem;
+}
+.universe-club-signup button {
+  padding: 0.8rem 2rem;
+  border-radius: 1.5rem;
+  border: none;
+  background: #ff7026;
+  text-transform: uppercase;
+  font-size: 1.1rem;
+}
+.club-input-and-error {
+  position: relative;
+}
+.club-error {
+  position: absolute;
+  font-size: 1rem;
+  left: 3rem;
+  display: none;
+}
+.input-and-button {
+  display: flex;
+  align-items: center;
+}
+/* MEDIA QUIERIES*/
+@media (max-width: 1150px) {
+  .universe-club-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .contact-form {
+    width: 100%;
+  }
+}
+@media (max-width: 600px) {
+  .contact-form-style-container {
+    margin: 2rem 0;
+    align-self: center;
+  }
+  .contact-label-input input,
+  textarea {
+    width: 350px;
+  }
+}
+@media (max-width: 600px) {
+  .universe-club-container {
+    padding: 5rem 5%;
+  }
+  .contact-label-input input,
+  textarea {
+    width: 280px;
+  }
+
+  .input-and-button {
+    flex-direction: column;
+    align-items: start;
+    gap: 0.5rem;
+  }
+}
+
+.message-sent::after {
+  content: "Message sent";
+  position: absolute;
+  bottom: 1rem;
+  left: 25%;
+  background: #a6f9ae;
+  padding: 1rem;
+  border: 2px solid #0c4212;
+  color: #0c4212;
+  transition-duration: 1s;
+  text-transform: uppercase;
+  display: flex;
+  justify-content: center;
+  width: 40%;
+  border-radius: 1rem;
+}

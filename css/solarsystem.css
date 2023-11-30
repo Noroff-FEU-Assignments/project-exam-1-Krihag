@@ -1,0 +1,174 @@
+.solarsystem-background {
+  background: #000;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 5rem 0;
+  overflow: hidden;
+  z-index: -1;
+}
+.background-video {
+  width: 200%;
+  z-index: -1;
+  position: absolute;
+
+  bottom: 0;
+  left: 0;
+}
+
+.solarsystem-header {
+  margin-bottom: 3rem;
+  max-width: 550px;
+  text-align: center;
+}
+
+.solarsystem-header p {
+  color: #bdbdbd;
+}
+
+h1 {
+  color: #fff;
+  text-transform: uppercase;
+}
+
+h1 span {
+  color: #ff7026;
+}
+
+.solarsystem-note {
+  padding: 1rem 0;
+  color: #b2b2b2;
+  max-width: 500px;
+  text-align: center;
+}
+
+/* THE SOLARSYSTEM INFO */
+
+.solarsystem-info-container {
+  padding: 5rem 10% 10rem;
+  background: #fff;
+  font-size: 1.15rem;
+}
+.content-and-facts {
+  display: flex;
+  justify-content: space-between;
+  gap: 2rem;
+}
+
+.solarsystem-content {
+  margin-top: 1rem;
+  max-width: 600px;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+.solarsystem-facts {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+.solarsystem-facts h3 {
+  margin-bottom: 2.3rem;
+}
+.solarsystem-fact {
+  background: #000;
+  color: #ebebeb;
+  padding: 1.1rem 2rem;
+  border-radius: 2rem;
+
+  width: 330px;
+  max-width: 100%;
+  font-size: 1.3rem;
+  display: flex;
+  gap: 0.7rem;
+}
+.all-planets-container {
+  background: #ebebeb;
+  padding: 10rem 0;
+  margin: auto;
+  /* display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; */
+}
+
+.all-planets-container h2 {
+  font-weight: 500;
+}
+
+.header-and-view {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1140px;
+  margin: auto;
+}
+.header-and-view a {
+  font-weight: 500;
+  color: #000;
+  font-size: 1.3rem;
+  border-bottom: 2px solid #ff7026;
+  padding-bottom: 0.7rem;
+}
+.all-planets-posts {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+  padding-top: 2.5rem;
+}
+
+@media (max-width: 1400px) {
+  .all-planets-container {
+    padding: 7rem 10%;
+  }
+  .header-and-view {
+    max-width: 750px;
+  }
+  .all-planets-posts {
+  }
+}
+@media (max-width: 1000px) {
+  .all-planets-container {
+    padding: 7rem 5%;
+  }
+  .header-and-view {
+    max-width: 750px;
+    flex-direction: column;
+    gap: 3rem;
+  }
+  .all-planets-posts {
+    flex-direction: column;
+    align-items: center;
+  }
+  .content-and-facts {
+    flex-direction: column;
+  }
+  .solarsystem-info-container {
+    padding: 5rem 5%;
+  }
+}
+@media (max-width: 699px) {
+  .solarsystem-header {
+  }
+  .solarsystem-header h1 {
+    font-size: 1.2rem;
+  }
+  .solarsystem-header p,
+  .solarsystem-note {
+    font-size: 0.9rem;
+    max-width: 380px;
+  }
+}
+@media (max-width: 400px) {
+  .solarsystem-header h1 {
+    font-size: 1rem;
+  }
+  .solarsystem-background {
+    padding: 4rem 1rem;
+    font-size: 0.8rem;
+  }
+}
