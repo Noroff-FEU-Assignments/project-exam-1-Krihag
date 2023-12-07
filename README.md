@@ -53,7 +53,8 @@ Note that this is an exam, and therefore tutor support will be limited as per th
 ## Built With
 - HTML
 - CSS
-- Javascript 
+- Javascript
+- Strapi 
 
 ## Getting Started
 
