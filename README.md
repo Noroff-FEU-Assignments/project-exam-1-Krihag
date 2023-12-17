@@ -6,7 +6,7 @@ This was our 1st year Project Exam.
 
 ## Description
 
-For the first year project exam our assignment was to create a blog site. We were free to choose the theme of the blog and the design of it ourself.
+For the first year project exam our assignment was to create a blog site. We were free to choose the theme of the blog and the design of it ourself. We had to first design it using figma and then code it. For this we had a total of 5 weeks.
 
 ## Brief
 
@@ -53,7 +53,8 @@ You will need to add at least 12 blogs for your website. You can use lorem ipsum
 - HTML
 - CSS
 - Javascript
-- Strapi 
+- Strapi
+
 
 ## Getting Started
 
