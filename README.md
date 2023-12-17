@@ -59,8 +59,6 @@ You will need to add at least 12 blogs for your website. You can use lorem ipsum
 
 ### Installing
 
-This is where you list how to get the project started. It typically just includes telling a person to clone the repo and then to install the dependencies e.g.
-
 1. Clone the repo:
 
 ```bash
